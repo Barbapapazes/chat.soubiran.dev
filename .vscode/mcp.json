@@ -1,0 +1,9 @@
+{
+	"servers": {
+		"soubiran.dev": {
+			"url": "https://nlweb.soubiran.dev/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}
