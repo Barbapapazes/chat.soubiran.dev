@@ -5,7 +5,7 @@ import { createOpenAI } from '@ai-sdk/openai'
 export default defineEventHandler(async (event) => {
   const { messages } = await readBody(event)
 
-  const runtimeConfig = useRuntimeConfig()
+  const runtimeConfig = useRuntimeConfig(event)
 
   const httpTransport = new StreamableHTTPClientTransport(
     new URL(runtimeConfig.mcpEndpoint),
